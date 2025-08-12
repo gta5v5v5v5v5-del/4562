@@ -318,6 +318,12 @@
     </style>
 
 <link id="chromealerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://dacdinoicboceafielngnmjjplncljhj/content.css"></head>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log('Service Worker registered'));
+  }
+</script>
 <body>
         <div class="dynamic-panel">
     <div class="Login_container_1">
